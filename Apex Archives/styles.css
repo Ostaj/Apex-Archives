@@ -1,0 +1,197 @@
+/* Apply Poppins font-family */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Updated to Poppins */
+    background: url('Resources/bg.jpg') no-repeat center center fixed; /* Unblurred background */
+    background-size: cover;
+    color: black; /* Default text color */
+    display: flex;
+    flex-direction: column; /* Ensure footer stays at the bottom */
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Container to position the header and main content side by side */
+.container {
+    display: flex;
+    width: 100%;
+    padding: 10px; /* Reduced padding */
+    position: relative; /* Position relative for positioning elements */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Background blur box for the logo */
+.logo-background-box {
+    background: rgba(255, 255, 255, 0.3); /* Translucent background */
+    backdrop-filter: blur(8px); /* Blur effect */
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px; /* Increased padding for larger logo box */
+    margin-bottom: 20px; /* Space between logo and description */
+    width: 700px; /* Adjusted width to accommodate larger logo */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Header section for the left side logo and description */
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1; /* Takes up remaining space */
+}
+
+/* Style for the logo */
+#logo {
+    width: 675px; /* Doubled size of logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for the description below the logo */
+#description {
+    max-width: 600px; /* Adjust max width as needed */
+    text-align: left; /* Align text to the left */
+    font-size: 1.1em; /* Slightly smaller font size for description */
+    margin-left: 20px; /* Shift content to the right */
+}
+
+/* Style for the bullet points section */
+.bullet-points {
+    margin-top: 20px; /* Space above the bullet points section */
+    font-size: 1em; /* Slightly smaller font size for bullet points */
+    line-height: 1.4; /* Adjusted line height for tighter spacing */
+    margin-left: 20px; /* Shift bullet points to the right */
+}
+
+.bullet-points .bullet {
+    font-size: 1.5em; /* Larger bullet points */
+    color: black; /* Color for bullet points */
+    margin-right: 10px; /* Space between bullet point and text */
+    vertical-align: middle; /* Align bullet with text */
+}
+
+.bullet-points .question {
+    display: inline; /* Keep question text on the same line as bullet */
+    vertical-align: middle; /* Center align question text with bullet */
+}
+
+.bullet-points strong {
+    font-size: 1.1em; /* Slightly larger font size for questions */
+}
+
+.bullet-points .link {
+    color: blue; /* Blue color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.bullet-points .email {
+    color: red; /* Red color for email */
+    font-family: sans-serif; /* Consistent font-family for email */
+    font-size: 1em; /* Match font size with adjacent text */
+    font-weight: bold; /* Make email bold */
+}
+
+/* Style for the name */
+.name {
+    color: red; /* Red color for name */
+    font-weight: bold; /* Bold text for name */
+}
+
+/* Main section for the right side boxes */
+.right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between the boxes */
+    align-items: flex-end;
+    flex: 1; /* Takes up remaining space */
+    margin-left: auto; /* Pushes the boxes closer to the right edge */
+    margin-top: 50px; /* Move the boxes down */
+}
+
+/* Style for the right side boxes */
+.box {
+    background: rgba(255, 255, 255, 0.3); /* More translucent background */
+    backdrop-filter: blur(8px); /* Blur effect */
+    border-radius: 15px;
+    padding: 20px; /* Increased padding for better spacing */
+    width: 370px; /* Slightly increased width for larger boxes */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effect */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+}
+
+.box:hover {
+    transform: scale(1.05); /* Slightly enlarge the box */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 1); /* Bright red glowing effect with full opacity */
+    background-color: rgba(255, 255, 255, 0.5); /* Slightly less translucent background on hover */
+}
+
+.box:hover .title {
+    color: red; /* Change title color to red on hover */
+}
+
+/* Style for the icons inside the boxes */
+.icon {
+    width: 160px; /* Slightly increased icon size */
+    height: auto;
+}
+
+/* Style for the title in the boxes */
+.title {
+    color: black; /* Default color */
+    font-weight: bold; /* Make the title bold */
+}
+
+/* Adjust the vertical position of the top box */
+#zero {
+    margin-top: 20px; /* Space above the top box */
+}
+
+
+/* Style for the right side boxes */
+.right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between the boxes */
+    align-items: flex-end;
+    flex: 1; /* Takes up remaining space */
+    margin-left: auto; /* Pushes the boxes closer to the right edge */
+    margin-top: 50px; /* Move the boxes down */
+}
+
+a.box {
+    display: block; /* Ensure <a> behaves like a block element */
+    background: rgba(255, 255, 255, 0.3); /* Translucent background */
+    backdrop-filter: blur(8px); /* Blur effect */
+    border-radius: 15px;
+    padding: 20px; /* Increased padding for better spacing */
+    width: 370px; /* Slightly increased width for larger boxes */
+    text-align: center;
+    text-decoration: none; /* Remove underline from <a> tags */
+    color: black; /* Default text color inside the boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effect */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+}
+
+a.box:hover {
+    transform: scale(1.05); /* Slightly enlarge the box */
+    box-shadow: 0 0 20px rgba(255, 0, 0, 1); /* Bright red glowing effect with full opacity */
+    background-color: rgba(255, 255, 255, 0.5); /* Slightly less translucent background on hover */
+}
+
+a.box:hover .title {
+    color: red; /* Change title color to red on hover */
+}
+
+.icon {
+    width: 160px; /* Slightly increased icon size */
+    height: auto;
+}
+
+.title {
+    color: black; /* Default color */
+    font-weight: bold; /* Make the title bold */
+}
+
+.description {
+    font-size: 1em; /* Adjust font size if needed */
+}
