@@ -1,4 +1,4 @@
-# Apex Archive
+# Apex Archives
 
 This GitHub repository provides access to a Google Drive archive containing a comprehensive array of academic resources, including assignments, lecture notes, PDFs, quizzes, and solution sets. It is designed to support efficient study and research for the current semester.
 
