@@ -4,7 +4,7 @@ This GitHub repository provides access to a Google Drive archive containing a co
 
 ## Preview
 
-![Preview](Resources/preview.png)
+![Preview](Apex%20Archives/Resources/preview.png)
 
 ## Features
 
